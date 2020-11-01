@@ -13,6 +13,7 @@
     <div class="grid">
         <div class="ingredient-group" id="wraps">
             <h3>Designate your wrap:</h3>
+            <!--/*@thymesVar id="wrap" type="com.tacocloud.model.Ingredient"*/-->
             <div th:each="ingredient : ${wrap}">
                 <label>
                     <input name="ingredients" type="checkbox" th:value="${ingredient.id}"
@@ -23,6 +24,7 @@
         </div>
         <div class="ingredient-group" id="proteins">
             <h3>Pick your protein:</h3>
+            <!--/*@thymesVar id="protein" type="com.tacocloud.model.Ingredient"*/-->
             <div th:each="ingredient : ${protein}">
                 <label>
                     <input name="ingredients" type="checkbox" th:value="${ingredient.id}"
@@ -33,6 +35,7 @@
         </div>
         <div class="ingredient-group" id="cheeses">
             <h3>Choose your cheese:</h3>
+            <!--/*@thymesVar id="cheese" type="com.tacocloud.model.Ingredient"*/-->
             <div th:each="ingredient : ${cheese}">
                 <label>
                     <input name="ingredients" type="checkbox" th:value="${ingredient.id}"
@@ -43,6 +46,7 @@
         </div>
         <div class="ingredient-group" id="veggies">
             <h3>Determine your veggies:</h3>
+            <!--/*@thymesVar id="veggies" type="com.tacocloud.model.Ingredient"*/-->
             <div th:each="ingredient : ${veggies}">
                 <label>
                     <input name="ingredients" type="checkbox" th:value="${ingredient.id}"
@@ -53,6 +57,7 @@
         </div>
         <div class="ingredient-group" id="sauces">
             <h3>Select your sauce:</h3>
+            <!--/*@thymesVar id="sauce" type="com.tacocloud.model.Ingredient"*/-->
             <div th:each="ingredient : ${sauce}">
                 <label>
                     <input name="ingredients" type="checkbox" th:value="${ingredient.id}"
@@ -72,4 +77,3 @@
     </div>
 </form>
 </body>
-</html>
